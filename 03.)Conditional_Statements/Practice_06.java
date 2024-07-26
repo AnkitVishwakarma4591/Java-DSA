@@ -10,6 +10,44 @@
 
 
 
+// import java.util.*;
+// public class Practice_06 {
+//     public static void main(String[] args){
+//         Scanner sc = new Scanner(System.in);
+//         System.out.println("Enter 1st number :");
+//         int a = sc.nextInt();
+//         System.out.println("Enter 2nd number :");
+//         int b = sc.nextInt();
+//         System.out.print("Enter operation(+,-,*,/,%) :");
+//         String ch = sc.next();
+
+//         int sum = a+b;
+//         int diff = a-b;
+//         double multiply = a*b;
+//         double div = a/b;
+//         double rem = a%b;
+
+
+//         switch(ch){
+//             case "+" : System.out.println("Sum of number :" + sum);
+//                         break;
+//             case "-" : System.out.println("difference of number :" + diff);
+//                         break;
+//             case "*" : System.out.println("multiplication of number :" + multiply);
+//                         break;
+//             case "/" : System.out.println("Division of numer :" + div);
+//                         break;
+//             case "%" : System.out.println("Moduloor of number :" + rem);
+//                         break;
+//             default : System.out.println("Invalid enter");
+//         }
+
+//         sc.close();
+//     }
+// }
+
+
+
 import java.util.*;
 public class Practice_06 {
     public static void main(String[] args){
@@ -21,23 +59,26 @@ public class Practice_06 {
         System.out.print("Enter operation(+,-,*,/,%) :");
         String ch = sc.next();
 
-        int sum = a+b;
-        int diff = a-b;
-        double multiply = a*b;
-        double div = a/b;
-        double rem = a%b;
 
 
         switch(ch){
-            case "+" : System.out.println("Sum of number :" + sum);
+            case "+" : System.out.println(a+b);
                         break;
-            case "-" : System.out.println("difference of number :" + diff);
+            case "-" : System.out.println(a-b);
                         break;
-            case "*" : System.out.println("multiplication of number :" + multiply);
+            case "*" : System.out.println(a*b);
                         break;
-            case "/" : System.out.println("Division of numer :" + div);
+            case "/" : if(b == 0){
+                System.out.println("Denominator can't be zero");
+            }else{
+                System.out.println(a/b);
+            }
                         break;
-            case "%" : System.out.println("Moduloor of number :" + rem);
+            case "%" : if(b == 0){
+                System.out.println("Denominator can't be zero");
+            }else{
+                System.out.println(a%b);
+            }
                         break;
             default : System.out.println("Invalid enter");
         }
