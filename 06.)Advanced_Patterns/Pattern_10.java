@@ -1,3 +1,13 @@
+// print the pattern        Butterfly Pattern
+// *             * 
+// * *         * * 
+// * * *     * * * 
+// * * * * * * * * 
+// * * * * * * * * 
+// * * *     * * * 
+// * *         * * 
+// *             * 
+
 public class Pattern_10 {
     public static void main(String[] args){
         int n=4;
@@ -61,7 +71,7 @@ public class Pattern_10 {
             System.out.println();
         }
 
-        
+
         // lower part
         for(int i=n; i>=1; i--){
             // lower left part star
