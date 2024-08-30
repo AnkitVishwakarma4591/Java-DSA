@@ -1,5 +1,5 @@
 // print the pattern           Diamond pattern
-//        * 
+//         * 
 //       * * * 
 //     * * * * * 
 //   * * * * * * * 
