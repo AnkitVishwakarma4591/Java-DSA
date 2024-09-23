@@ -1,20 +1,27 @@
+//  Find the maximum & minimum number in an array of integers.
+
+import java.util.*;
 public class Practice_05 {
     public static void main(String[] args){
-        String name[] = {"p","y","t","h","o","n"};
-        //  int n = 0;
-        for(int i=0 ; i<6 ; i++){
-            for(int j=0; j<=i ; j++){
-                System.out.print(name[j]);
-                
-            }
-            System.out.println();
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter size of Array : ");
+        int size = sc.nextInt();
+        int number[] = new int[size];
+        for(int i=0;i<number.length;i++){
+            number[i] = sc.nextInt();
         }
-        for(int i= 6 ; i>0 ; i--){
-            for(int j=0; j<=i-1 ; j++){
-                System.out.print(name[j]);
-                
+        int min = number[0];
+        int max = number[0];
+        for(int i=0;i<number.length;i++){
+            if(number[i] < min){
+                min = number[i];
+            }else if(number[i] > max){
+                max = number[i];
             }
-            System.out.println();
         }
+        System.out.println("Smallest number is :"+min);
+        System.out.println("Largest number is :"+max);
+        
+        sc.close();
     }
 }
