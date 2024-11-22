@@ -9,7 +9,7 @@ public class Practice_01 {
         System.out.println(Name);
         System.out.println(fullName);
         System.out.println(sentence);
-        boolean d = sc.ne
+        boolean d = sc.nextBoolean();
         // two way to take input
         String name = sc.next(); // it will print  only one word
         // String Fullname = sc.nextLine(); // it will print all sentence.
