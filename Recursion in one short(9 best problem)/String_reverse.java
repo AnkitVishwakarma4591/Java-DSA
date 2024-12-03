@@ -1,4 +1,3 @@
-
 /*
 Print String in reverse order.
  */
